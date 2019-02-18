@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SubscriberManagement
+*/
+
+"all" = "All";
+"active" = "Active";
+"unsuscribed" = "Unsuscribed";
+"mailerLite" = "Mailer Lite";
