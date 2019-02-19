@@ -102,6 +102,7 @@ extension DetailSubscriberViewController {
 
     func resetUI() {
         dismissKeyboard()
+        setupData()
         title = Localizable.detail()
         editSaveButton.removeTarget(nil,
                                     action: nil,
