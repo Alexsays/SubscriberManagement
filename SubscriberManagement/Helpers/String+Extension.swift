@@ -4,13 +4,16 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 typealias Localizable = R.string.localizable
 
-protocol StringRawRepresentable {
-    var stringRawValue: String { get }
-}
+extension Timestamp {
 
-extension StringRawRepresentable where Self: RawRepresentable, Self.RawValue == String {
-    var stringRawValue: String { return rawValue }
+    func dateAsString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm dd/MM/yyyy"
+        return dateFormatter.string(from: dateValue())
+    }
+
 }

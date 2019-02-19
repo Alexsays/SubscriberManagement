@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DDE1947221C285C00B8C7F9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE1946221C285C00B8C7F9 /* APIClient.swift */; };
+		4DDE1949221C31B200B8C7F9 /* SCLAlertView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE1948221C31B200B8C7F9 /* SCLAlertView+Extension.swift */; };
+		4DDE194B221C33E000B8C7F9 /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE194A221C33E000B8C7F9 /* MBProgressHUD+Extension.swift */; };
+		4DDE19D0221C420100B8C7F9 /* DetailSubscriberMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE19CF221C420100B8C7F9 /* DetailSubscriberMethods.swift */; };
+		4DDE19D2221C43E200B8C7F9 /* AddSubscriberMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE19D1221C43E200B8C7F9 /* AddSubscriberMethods.swift */; };
+		4DDE19D4221C445F00B8C7F9 /* SubscriberListMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE19D3221C445F00B8C7F9 /* SubscriberListMethods.swift */; };
+		4DDFB0A6221BECA60078B276 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFB0A5221BECA60078B276 /* Validator.swift */; };
 		8164623E5A7A0A6769B54575 /* Pods_SubscriberManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C952F6DC600A9B95A787A526 /* Pods_SubscriberManagement.framework */; };
 		FA15595F221B35A400357D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15595E221B35A400357D33 /* AppDelegate.swift */; };
 		FA155961221B35A400357D33 /* SubscriberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA155960221B35A400357D33 /* SubscriberListViewController.swift */; };
@@ -26,6 +33,13 @@
 
 /* Begin PBXFileReference section */
 		095555FB7B17D8351C94F527 /* Pods-SubscriberManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriberManagement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SubscriberManagement/Pods-SubscriberManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		4DDE1946221C285C00B8C7F9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4DDE1948221C31B200B8C7F9 /* SCLAlertView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCLAlertView+Extension.swift"; sourceTree = "<group>"; };
+		4DDE194A221C33E000B8C7F9 /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
+		4DDE19CF221C420100B8C7F9 /* DetailSubscriberMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSubscriberMethods.swift; sourceTree = "<group>"; };
+		4DDE19D1221C43E200B8C7F9 /* AddSubscriberMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriberMethods.swift; sourceTree = "<group>"; };
+		4DDE19D3221C445F00B8C7F9 /* SubscriberListMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberListMethods.swift; sourceTree = "<group>"; };
+		4DDFB0A5221BECA60078B276 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		684253A8E7F9E009C67F0DFA /* Pods-SubscriberManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriberManagement.release.xcconfig"; path = "Pods/Target Support Files/Pods-SubscriberManagement/Pods-SubscriberManagement.release.xcconfig"; sourceTree = "<group>"; };
 		C952F6DC600A9B95A787A526 /* Pods_SubscriberManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriberManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA15595B221B35A400357D33 /* SubscriberManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubscriberManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +72,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DDE1942221C21BC00B8C7F9 /* List Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FA155960221B35A400357D33 /* SubscriberListViewController.swift */,
+				4DDE19D3221C445F00B8C7F9 /* SubscriberListMethods.swift */,
+			);
+			path = "List Screen";
+			sourceTree = "<group>";
+		};
+		4DDE1943221C21D100B8C7F9 /* Add Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAE37957221B6C2F00B95B29 /* AddSubscriberViewController.swift */,
+				4DDE19D1221C43E200B8C7F9 /* AddSubscriberMethods.swift */,
+			);
+			path = "Add Screen";
+			sourceTree = "<group>";
+		};
+		4DDE1944221C21E000B8C7F9 /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAE37959221B6C4B00B95B29 /* DetailSubscriberViewController.swift */,
+				4DDE19CF221C420100B8C7F9 /* DetailSubscriberMethods.swift */,
+			);
+			path = "Detail Screen";
+			sourceTree = "<group>";
+		};
+		4DDE1945221C284200B8C7F9 /* API Client */ = {
+			isa = PBXGroup;
+			children = (
+				4DDE1946221C285C00B8C7F9 /* APIClient.swift */,
+			);
+			path = "API Client";
+			sourceTree = "<group>";
+		};
 		5F51AC80B3BD0BECFD942BDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +149,7 @@
 				FA155975221B37BF00357D33 /* Models */,
 				FA155977221B37D100357D33 /* Controllers */,
 				FA155976221B37C400357D33 /* Views */,
+				4DDE1945221C284200B8C7F9 /* API Client */,
 				FA155978221B37D800357D33 /* Helpers */,
 				FA155979221B37DC00357D33 /* Resources */,
 			);
@@ -126,9 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				FAE3795B221B6D0F00B95B29 /* ViewController.swift */,
-				FA155960221B35A400357D33 /* SubscriberListViewController.swift */,
-				FAE37957221B6C2F00B95B29 /* AddSubscriberViewController.swift */,
-				FAE37959221B6C4B00B95B29 /* DetailSubscriberViewController.swift */,
+				4DDE1942221C21BC00B8C7F9 /* List Screen */,
+				4DDE1943221C21D100B8C7F9 /* Add Screen */,
+				4DDE1944221C21E000B8C7F9 /* Detail Screen */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -136,8 +186,11 @@
 		FA155978221B37D800357D33 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4DDE194A221C33E000B8C7F9 /* MBProgressHUD+Extension.swift */,
+				4DDE1948221C31B200B8C7F9 /* SCLAlertView+Extension.swift */,
 				FA55E9F5221B3C9100B3A418 /* String+Extension.swift */,
 				FA3D7022221B44DB00C69441 /* UIColor+Extension.swift */,
+				4DDFB0A5221BECA60078B276 /* Validator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -259,8 +312,10 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SubscriberManagement/Pods-SubscriberManagement-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
@@ -273,8 +328,10 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
@@ -313,12 +370,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDE1947221C285C00B8C7F9 /* APIClient.swift in Sources */,
 				FAE3795C221B6D0F00B95B29 /* ViewController.swift in Sources */,
 				FAE37958221B6C3000B95B29 /* AddSubscriberViewController.swift in Sources */,
 				FAE3795A221B6C4B00B95B29 /* DetailSubscriberViewController.swift in Sources */,
 				FA3D7023221B44DB00C69441 /* UIColor+Extension.swift in Sources */,
+				4DDE1949221C31B200B8C7F9 /* SCLAlertView+Extension.swift in Sources */,
+				4DDE19D2221C43E200B8C7F9 /* AddSubscriberMethods.swift in Sources */,
+				4DDE19D4221C445F00B8C7F9 /* SubscriberListMethods.swift in Sources */,
 				FA155961221B35A400357D33 /* SubscriberListViewController.swift in Sources */,
+				4DDFB0A6221BECA60078B276 /* Validator.swift in Sources */,
+				4DDE19D0221C420100B8C7F9 /* DetailSubscriberMethods.swift in Sources */,
 				FA9953DB221B3BA100F1B375 /* Subscriber.swift in Sources */,
+				4DDE194B221C33E000B8C7F9 /* MBProgressHUD+Extension.swift in Sources */,
 				FA15595F221B35A400357D33 /* AppDelegate.swift in Sources */,
 				FA55E9F6221B3C9100B3A418 /* String+Extension.swift in Sources */,
 				FA9953D9221B3AC600F1B375 /* SubscriberTableViewCell.swift in Sources */,

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .foregroundColor: UIColor.white
         ]
         UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().barTintColor = .greenMailerLite
+        UINavigationBar.appearance().barTintColor = .mlGreen
 
         // Firebase config
         FirebaseApp.configure()

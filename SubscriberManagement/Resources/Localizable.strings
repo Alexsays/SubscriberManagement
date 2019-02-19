@@ -3,7 +3,29 @@
   SubscriberManagement
 */
 
-"all" = "All";
+"accept" = "Accept";
 "active" = "Active";
+"add" = "Add";
+"add_subscriber" = "Add Subscriber";
+"all" = "All";
+"cancel" = "Cancel";
+"created_date" = "Created Date";
+"detail" = "Detail";
+"updated_date" = "Updated Date";
+"edit" = "Edit";
+"edit_subscriber" = "Edit Subscriber";
+"email" = "Email Address";
+"name" = "Name";
+"subscriber_saved" = "Subscriber Saved";
+"subscribers" = "Subscribers";
+"save" = "Save";
+"server_error" = "Server Error";
+"state" = "State";
 "unsuscribed" = "Unsuscribed";
-"mailerLite" = "Mailer Lite";
+
+/* Validator */
+
+"validation_error" = "Validation Error";
+"empty_field_all" = "There's some mandatory field empty";
+"invalid_characters" = "Name cannot contain symbols or numbers";
+"invalid_email" = "Invalid email, please check that the email is correctly written";

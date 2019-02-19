@@ -27,19 +27,10 @@ class SubscriberTableViewCell: UITableViewCell {
         return label
     }()
 
-    private let stateView: UIView = {
-        let view = UIView()
-        view.layer.cornerRadius = 5
-        return view
-    }()
-
     private let stateLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 13)
         label.textAlignment = .center
-        label.textColor = .white
-        label.layer.cornerRadius = 5
-        label.drawText(in: CGRect(x: 5, y: 5, width: 5, height: 5))
         return label
     }()
 
@@ -68,12 +59,6 @@ class SubscriberTableViewCell: UITableViewCell {
         mainStackView.leftToSuperview(offset: 16)
         mainStackView.topToSuperview(offset: 8)
         mainStackView.bottomToSuperview(offset: -8)
-//        stateView.centerYToSuperview()
-//        stateView.rightToSuperview(offset: -16)
-//        stateLabel.leftToSuperview(offset: 8)
-//        stateLabel.topToSuperview(offset: 8)
-//        stateLabel.rightToSuperview(offset: 8)
-//        stateLabel.bottomToSuperview(offset: 8)
         stateLabel.centerYToSuperview()
         stateLabel.rightToSuperview(offset: -16)
     }
@@ -84,14 +69,14 @@ class SubscriberTableViewCell: UITableViewCell {
         stateLabel.text = subscriber.state.rawValue.uppercased()
         switch subscriber.state {
         case .active:
-            stateLabel.layer.backgroundColor = UIColor.green.cgColor
+            stateLabel.textColor = .successGreen
         case .unsubscribed:
-            stateLabel.layer.backgroundColor = UIColor.red.cgColor
+            stateLabel.textColor = .dangerRed
         }
     }
 
-    static func reuseIdentifier() -> String {
+    static let reuseIdentifier: String = {
         return String(describing: self)
-    }
+    }()
 
 }

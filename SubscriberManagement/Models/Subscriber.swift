@@ -8,9 +8,17 @@ import Firebase
 
 struct Subscriber {
 
-    enum State: String, StringRawRepresentable {
+    enum State: String, CaseIterable {
         case active
         case unsubscribed
+
+        var position: Int {
+            return State.allCases.firstIndex(of: self) ?? 0
+        }
+
+        static func stateBy(_ active: Bool) -> State {
+            return active ? .active : .unsubscribed
+        }
     }
 
     var id: String
@@ -19,6 +27,24 @@ struct Subscriber {
     var state: State
     var createdTimestamp: Timestamp
     var updatedTimestamp: Timestamp
+
+    init(id: String = "", name: String, email: String,
+         state: State, createdTimestamp: Timestamp, updatedTimestamp: Timestamp) {
+        self.id = id
+        self.name = name
+        self.email = email
+        self.state = state
+        self.createdTimestamp = createdTimestamp
+        self.updatedTimestamp = updatedTimestamp
+    }
+
+    func encodeAsDict() -> [String: Any] {
+        return ["name": name,
+                "email": email,
+                "state": state.rawValue,
+                "createdTimestamp": createdTimestamp,
+                "updatedTimestamp": updatedTimestamp]
+    }
 
 }
 

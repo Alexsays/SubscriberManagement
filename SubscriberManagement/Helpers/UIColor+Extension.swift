@@ -7,6 +7,8 @@ import UIKit
 
 extension UIColor {
 
-    static let greenMailerLite = R.color.greenMailerLite()
+    static let dangerRed = R.color.dangerRed()!
+    static let mlGreen = R.color.mlGreen()!
+    static let successGreen = R.color.successGreen()!
 
 }
